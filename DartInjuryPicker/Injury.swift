@@ -13,14 +13,13 @@ enum Injury: String, Identifiable, CaseIterable {
     var id: String {self.rawValue}
     
     var message: String {
-        
         switch self {
-        case .skullFracture: return "Skull Fracture"
-        case .punctureWound: return "Puncture Wound"
-        case .blindness: return "Blindness"
-        case .laceration: return "Laceration"
-        case .brainTrauma: return "Brain Trauma"
-        case .death: return "Death"
+        case .skullFracture: return "A dart hit your skull and is now fractured..."
+        case .punctureWound: return "You've been punctured by a dart..."
+        case .blindness: return "A dart hit your eye! You are blind..."
+        case .laceration: return "You have a laceration..."
+        case .brainTrauma: return "A dart hit your head too hard, and now you have brain trauma..."
+        case .death: return "You are now one of the only few people to have died from a dart injury. Congrats!"
         }
     }
     
