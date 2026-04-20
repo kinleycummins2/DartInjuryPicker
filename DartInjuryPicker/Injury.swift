@@ -8,7 +8,12 @@
 import SwiftUI
 
 enum Injury: String, Identifiable, CaseIterable {
-    case skullFracture, punctureWound, blindness, laceration, brainTrauma, death
+    case skullFracture = "Skull Fracture"
+    case punctureWound = "Puncture Wound"
+    case blindness = "Blindness"
+    case laceration = "Laceration"
+    case brainTrauma = "Brain Trauma"
+    case death = "Death"
     
     var id: String {self.rawValue}
     

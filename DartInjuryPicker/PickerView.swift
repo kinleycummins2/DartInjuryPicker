@@ -17,12 +17,11 @@ struct PickerView: View {
                     dismiss()
                 } label: {
                     HStack {
-                        Image(systemName: injuryOption.Symbol)
+                        Text(injuryOption.symbol)
                             .font(.largeTitle)
-                        Text(injuryOption.rawValue.capitalized) {
+                        Text(injuryOption.rawValue.capitalized)
                             .font(.headline)
                             .padding(.leading)
-                        }
                     }
                 }
             }
@@ -32,6 +31,6 @@ struct PickerView: View {
 
 #Preview {
     NavigationStack {
-        PickerView(injury: .constant(.head))
+        PickerView(injury: .constant(.skullFracture))
     }
 }
